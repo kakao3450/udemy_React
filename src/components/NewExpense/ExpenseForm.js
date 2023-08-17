@@ -15,6 +15,7 @@ const ExpenseForm = (props) => {
   
   const titleChangeHandler = (event)=> {
     setEnterTitle(event.target.value);
+    console.log(event)
     // setUserInput({
     //   ...userInput,
     //   enteredTitle: event.target.value,
@@ -39,6 +40,16 @@ const ExpenseForm = (props) => {
     //   enteredDate: event.target.value,
     // });
   };
+
+  // const inputChangeHandler = (identifier, value) => {
+  //   if (identifier ==='title'){
+  //     setEnterTitle(value);
+  //   } else if (identifier ==='date'){
+  //     setEnterDate(value);
+  //   }else{
+  //     setEnterAmount(value);
+  //   }
+  // }
 
   const submitHandler = (event) => {
     event.preventDefault();
